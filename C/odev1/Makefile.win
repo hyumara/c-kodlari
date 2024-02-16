@@ -1,0 +1,30 @@
+# Project: Proje1
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = main1.o $(RES)
+LINKOBJ  = main1.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = Proje1.exe
+CXXFLAGS = $(CXXINCS)   -std=c99
+CFLAGS = $(INCS)   -std=c99
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Proje1.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "Proje1.exe" $(LIBS)
+
+main1.o: main1.c
+	$(CC) -c main1.c -o main1.o $(CFLAGS)

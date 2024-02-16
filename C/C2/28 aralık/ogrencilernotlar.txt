@@ -1,0 +1,4 @@
+1	humeyra	100
+2	asude	200
+3	cemre	30
+4	gorkem	10

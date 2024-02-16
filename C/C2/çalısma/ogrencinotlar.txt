@@ -1,0 +1,4 @@
+1	can	86
+2	sude	56
+3	humeyra	75
+4	nisa	100

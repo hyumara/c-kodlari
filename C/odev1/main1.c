@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+int bas=7;
+int bas2=3;
+int bosluk=2;
+int main()
+{
+  for (int i =0;i<6;i++){
+      for(int a=bas;a>0;a--){
+              printf("%d",a);
+              }
+      bas--;
+      for (int b=bosluk;b>0;b--){
+          printf(" ");
+          }
+       bosluk+=2 ;  
+      for (int c=bas2;c<10;c++){
+          printf("%d",c);    
+          }
+      bas2++;
+      printf("\n");
+      }    
+              
+  
+  return 0;
+}
